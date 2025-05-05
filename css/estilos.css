@@ -1,0 +1,289 @@
+/* Estilos base */
+
+/* colores 
+gris = #8f8f8f
+
+*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #000000;
+    padding: 50px 70px;
+    height: 420px;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+  }
+  
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px;
+
+  }
+
+  .nav-links a:hover {
+    background-color: #202020;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .recuadro{
+    padding: 5px;
+    text-align: center;
+    margin: 20px 50px;
+    color: #8f8f8f;
+    
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .producto {
+    position: relative;
+  }
+  
+  .producto img {
+    width: 100%;
+  }
+  
+  .producto .info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 0 0 5px black;
+  }
+  
+  .producto h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .producto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .detalle-producto{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .categ{
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .precio{
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  /* articulos */
+
+  .articulos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .articulo {
+    position: relative;
+  }
+  
+  .articulo img {
+    width: 100%;
+  }
+  
+  .articulo .info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 0 0 5px black;
+  }
+  
+  .articulo h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .articulo a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .infoPagina{
+    height: 400px;
+    background-color: #8f8f8f;;
+    color: white;
+    display: grid;
+
+  }
+
+  /* Contacto */
+
+  .contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .imagenes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .iconos{
+    width: 50px;
+  }
+
+  /* mapa */
+
+  .mapa{
+    padding: 40px;
+  }
+
+  /* Footer */
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .bloque-footer {
+    display: grid;
+    place-items: center; /* Centra horizontal y verticalmente */
+  }
+
+  .nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 600px;
+    margin: 40px;
+    background-color: #fff;
+  }
+
+  .bloque-izquierdo img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .bloque-derecho {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    height: 500px;
+  }
+
+  .texto {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #333;
+  }
+  
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 480px) {
+
+    .header {
+        padding: 10px 10px;
+        background-color: #8f8f8f;
+        height: auto;
+        display: block;
+        background-image: url("../img/fondo480.jpg");
+        background-size: contain;
+        background-position: bottom center;
+    
+      }
+
+    .nav {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 10px;
+      display: none;
+    }
+  
+    .nav-logo {
+      justify-self: center;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .articulos {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+    .recuadro{
+      border: 3px solid #8f8f8f;
+    }
+
+    .footer {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+  
