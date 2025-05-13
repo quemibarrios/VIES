@@ -4,23 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nombre del sitio</title>
+    <title>Vies Store</title>
     <!-- import -->
     <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
     <!-- Cabecera/Header -->
     <header class="header">
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
       <nav class="nav">
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
           <a href="./productos.html">Productos</a>
-          <a href="#contacto">Contacto</a>
-          <a href="#contacto">Ubicación</a>
+          <a href="./contacto.html">Contacto</a>
           <a href="./nosotros.html">Nosotros</a>
         </div>
         <div class="nav-logo">
           <a href="./index.html">
-            <img src="./img/VIES.png" alt="Logo" class="logo" />
+            <img src="./img/VIES.png" alt="Logo" class="logo">
           </a>
         </div>
       </nav>
@@ -30,20 +31,23 @@
 
     <div class="nosotros">
       <div class="bloque-izquierdo">
-        <img src="./img/basicos.webp" alt="Imagen de contacto">
+        <img src="./img/casa.jpg" alt="Imagen de contacto">
+
       </div>
       <div class="bloque-derecho">
         <div class="texto">
           <h2>Nosotros</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod provident a fugiat! Sit consectetur dicta nemo obcaecati saepe enim nisi porro, qui nesciunt ipsam omnis deleniti, itaque rem fuga veritatis, harum mollitia voluptates! Aperiam vel voluptate illum delectus, modi cum ipsum assumenda, nostrum ab aliquam, architecto veritatis. Molestias veritatis aperiam hic velit optio deserunt numquam! Dicta reprehenderit ullam eaque exercitationem aliquam aspernatur iusto dolorum magni culpa facilis autem quasi corporis nam officiis doloremque quas, maiores odio error nesciunt veritatis dignissimos atque labore. Nisi aspernatur ab, adipisci doloribus repellat id, officia eius ducimus tempora tempore animi quaerat, illum ad commodi libero!</p>
-          
-        </div>
+          <p>En VIES, creemos que la moda es mucho más que vestir: es una forma de expresión, confianza y sueños hechos realidad. Nuestra tienda online está diseñada para ofrecerte una experiencia de compra fluida y eficiente, donde cada prenda refleja calidad, tendencia y un propósito más grande.
+          Nuestro compromiso es brindarte lo mejor en ropa femenina, con un sitio intuitivo y envíos gratuitos para que disfrutes sin preocupaciones. Pero VIES es más que moda: es la materialización de un sueño. Con cada compra, contribuyes a la construcción de un asilo que honrará el legado de amor y cuidado de una mujer excepcional, nuestra inspiración.
+            
+            Porque vestirnos es también soñar.
+            </p>
+          </div>
       </div>
     </div>
 
 
-
-    <hr />
+    <hr/>
 
     <footer id="contacto" class="footer">
 
@@ -51,15 +55,28 @@
 
         <div class="contacto">
           <div class="info">
-            <div><strong>Dirección:</strong> Calle Falsa 123, Ciudad</div>
-            <div><strong>Mail:</strong> contacto@ejemplo.com</div>
-            <div><strong>Teléfono:</strong> +54 9 11 1234 5678</div>
+            <div class="contacto-titulo"><strong>Contacto</strong></div>
+            <div><strong>Dirección:</strong> Bogotá 3318, CABA</div>
+            <div><strong>Mail:</strong> info@vies.com</div>
+            <div><strong>Teléfono:</strong> +54 9 11 111 11111</div>
           </div>
         </div>
       </div>
       <div class="footer-dev bloque-footer">
+    
+        <div class="cuadro-contacto">
+          <div class="info">
+            <div class="news"><strong>Newsletter</strong> </div>
+            <div class="news-detalle">Quieres recibir nuestras ofertas? Registrate yá mismo y comenzá a disfrutarlas</div>
+            <div>
+              <form class="news-campo" action="" method="get">
+                <input class="news-camp" type="text" placeholder="Email">
+                <button  class="news-boton" type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
 
-        <p>Desarrollado por Akemis</p>
       </div>
       <div class="footer-logo bloque-footer">
         <iframe
@@ -73,5 +90,13 @@
         ></iframe>
       </div>
     </footer>
+
+    <script>
+      function toggleMenu() {
+          const menu = document.querySelector(".nav-links");
+          menu.classList.toggle("activo");
+      }
+  </script>
+  
   </body>
 </html>

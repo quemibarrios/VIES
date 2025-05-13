@@ -4,23 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nombre del sitio</title>
+    <title>Vies Store</title>
     <!-- import -->
     <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
     <!-- Cabecera/Header -->
     <header class="header">
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
       <nav class="nav">
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
           <a href="./productos.html">Productos</a>
-          <a href="#contacto">Contacto</a>
-          <a href="#contacto">Ubicación</a>
+          <a href="./contacto.html">Contacto</a>
           <a href="./nosotros.html">Nosotros</a>
         </div>
         <div class="nav-logo">
           <a href="./index.html">
-            <img src="./img/VIES.png" alt="Logo" class="logo" />
+            <img src="./img/VIES.png" alt="Logo" class="logo">
           </a>
         </div>
       </nav>
@@ -33,28 +34,28 @@
         <img src="./img/basicos.webp" alt="Básico" />
         <div class="info">
           <h3>Básico</h3>
-          <a href="./categorias.html">VER TIENDA</a>
+          <a href="./productos.html">VER TIENDA</a>
         </div>
       </div>
       <div class="producto">
-        <img src="./img/basicos.webp" alt="Pantalones" />
+        <img src="./img/pantalones.webp" alt="Pantalones" />
         <div class="info">
           <h3>Pantalones</h3>
-          <a href="./categorias.html">VER TIENDA</a>
+          <a href="./productos.html">VER TIENDA</a>
         </div>
       </div>
       <div class="producto">
-        <img src="./img/basicos.webp" alt="Tejidos" />
+        <img src="./img/tejidos.webp" alt="Tejidos" />
         <div class="info">
           <h3>Tejidos</h3>
-          <a href="./categorias.html">VER TIENDA</a>
+          <a href="./productos.html">VER TIENDA</a>
         </div>
       </div>
       <div class="producto">
-        <img src="./img/basicos.webp" alt="Linea Importada" />
+        <img src="./img/lineaImportada.webp" alt="Linea Importada" />
         <div class="info">
           <h3>Linea Importada</h3>
-          <a href="./categorias.html">VER TIENDA</a>
+          <a href="./productos.html">VER TIENDA</a>
         </div>
       </div>
     </div>
@@ -63,60 +64,88 @@
 
     <div class="articulos">
       <div class="articulo">
-        <a href="">
-          <img src="./img/categoria.jpg" alt="Pantalones" />Pantalones
+        <a href="./productos.html">
+          <img src="./img/producto2.webp" alt="Pantalones" />Pantalones
         </a>
         <div class="detalle-producto">
-          <div class="categ">Nombre Categoria</div>
-          <div class="precio">$ 100.000</div>
+          <div class="categ">BÁSICOS</div>
+          <div class="precio">$ 10.000</div>
+        </div>
+        <div class="detalle-producto">Body Básico Microfibra</div>
+      </div>
+      <div class="articulo">
+        <a href="./productos.html">
+          <img src="./img/producto3.webp" alt="Pantalones" />Pantalones
+        </a>
+        <div class="detalle-producto">
+          <div class="categ">TEJIDOS</div>
+          <div class="precio">$ 10.000</div>
+        </div>
+        <div class="detalle-producto">Sweter Morley Lurex</div>
+      </div>
+      <div class="articulo ocultar">
+        <a href="./productos.html">
+          <img src="./img/producto1.webp" alt="Pantalones" />Pantalones
+        </a>
+        <div class="detalle-producto">
+          <div class="categ">PANTALONES</div>
+          <div class="precio">$ 10.00</div>
         </div>
         <div class="detalle-producto">Nombre Prodcuto</div>
       </div>
-      <div class="articulo">
-        <a href="">
-          <img src="./img/categoria.jpg" alt="Pantalones" />Pantalones
+      <div class="articulo ocultar">
+        <a href="./productos.html">
+          <img src="./img/producto4.webp" alt="Pantalones" />Pantalones
         </a>
         <div class="detalle-producto">
-          <div class="categ">Nombre Categoria</div>
-          <div class="precio">$ 100.000</div>
+          <div class="categ">LINEA IMPORTADA</div>
+          <div class="precio">$ 10.000</div>
         </div>
         <div class="detalle-producto">Nombre Prodcuto</div>
       </div>
-      <div class="articulo">
-        <a href="">
-          <img src="./img/categoria.jpg" alt="Pantalones" />Pantalones
+      <div class="articulo ocultar">
+        <a href="./productos.html">
+          <img src="./img/producto5.webp" alt="Pantalones" />Pantalones
         </a>
         <div class="detalle-producto">
-          <div class="categ">Nombre Categoria</div>
-          <div class="precio">$ 100.000</div>
+          <div class="categ">BÁSICOS</div>
+          <div class="precio">$ 10.000</div>
         </div>
         <div class="detalle-producto">Nombre Prodcuto</div>
       </div>
-      <div class="articulo">
-        <a href="">
-          <img src="./img/categoria.jpg" alt="Pantalones" />Pantalones
+      <div class="articulo ocultar">
+        <a href="./productos.html">
+          <img src="./img/producto1.webp" alt="Pantalones" />Pantalones
         </a>
         <div class="detalle-producto">
-          <div class="categ">Nombre Categoria</div>
-          <div class="precio">$ 100.000</div>
+          <div class="categ">PANTALONES</div>
+          <div class="precio">$ 10.00</div>
         </div>
         <div class="detalle-producto">Nombre Prodcuto</div>
       </div>
-      <div class="articulo">
-        <a href="">
-          <img src="./img/categoria.jpg" alt="Pantalones" />Pantalones
+      <div class="articulo ocultar">
+        <a href="./productos.html">
+          <img src="./img/producto1.webp" alt="Pantalones" />Pantalones
         </a>
         <div class="detalle-producto">
-          <div class="categ">Nombre Categoria</div>
-          <div class="precio">$ 100.000</div>
+          <div class="categ">PANTALONES</div>
+          <div class="precio">$ 10.00</div>
+        </div>
+        <div class="detalle-producto">Nombre Prodcuto</div>
+      </div>
+            <div class="articulo ocultar">
+        <a href="./productos.html">
+          <img src="./img/producto1.webp" alt="Pantalones" />Pantalones
+        </a>
+        <div class="detalle-producto">
+          <div class="categ">PANTALONES</div>
+          <div class="precio">$ 10.00</div>
         </div>
         <div class="detalle-producto">Nombre Prodcuto</div>
       </div>
     </div>
 
-    <!-- preguntar si le dieron header, footer, sections, article -->
-
-    <hr />
+    <hr/>
 
     <footer id="contacto" class="footer">
 
@@ -124,15 +153,28 @@
 
         <div class="contacto">
           <div class="info">
-            <div><strong>Dirección:</strong> Calle Falsa 123, Ciudad</div>
-            <div><strong>Mail:</strong> contacto@ejemplo.com</div>
-            <div><strong>Teléfono:</strong> +54 9 11 1234 5678</div>
+            <div class="contacto-titulo"><strong>Contacto</strong></div>
+            <div><strong>Dirección:</strong> Bogotá 3318, CABA</div>
+            <div><strong>Mail:</strong> info@vies.com</div>
+            <div><strong>Teléfono:</strong> +54 9 11 111 11111</div>
           </div>
         </div>
       </div>
       <div class="footer-dev bloque-footer">
+    
+        <div class="cuadro-contacto">
+          <div class="info">
+            <div class="news"><strong>Newsletter</strong> </div>
+            <div class="news-detalle">Quieres recibir nuestras ofertas? Registrate ya mismo y comenzá a disfrutarlas</div>
+            <div>
+              <form class="news-campo" action="" method="get">
+                <input class="news-camp" type="text" placeholder="Email">
+                <button  class="news-boton" type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
 
-        <p>Desarrollado por Akemis</p>
       </div>
       <div class="footer-logo bloque-footer">
         <iframe
@@ -146,5 +188,14 @@
         ></iframe>
       </div>
     </footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector(".nav-links");
+        menu.classList.toggle("activo");
+}
+
+</script>
+
   </body>
 </html>
