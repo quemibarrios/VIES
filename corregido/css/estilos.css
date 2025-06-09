@@ -152,8 +152,8 @@ body {
 
 .producto img {
   width: var(--productoW);
-  height: var(--prductoH);
-  object-fit: fill;
+  height: var(--productoH);
+  
 }
 
 .producto .info {
@@ -298,12 +298,17 @@ body {
   align-items: center;
   text-align: center;
   gap: 30px;
+  
 }
 
 .contacto-container h1 {
   text-align: center;
   margin-top: 50px;
   width: 100%;
+  color: #8f8f8f;
+  padding: 5px;
+
+  margin: 20px 50px; 
 }
 
 .contacto-titulo {
@@ -334,14 +339,22 @@ body {
 /*formulario */
 
 .formulario {
-  max-width: 500px;
+  width: calc(400px + 15vw);
   margin: 0 auto;
   padding: 20px;
   background-color: #f8f8f8;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-x: scroll;
+  margin: 10px;
 }
 
+.formulario textarea{
+  height: 200px;
+}
+.formulario button{
+  font-size: 16px;
+}
 label {
   font-weight: bold;
   display: block;
@@ -353,12 +366,11 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #8f8f8f;
   border-radius: 5px;
 }
 
 /* botón de envio */
-
 
 
 form {
@@ -406,8 +418,8 @@ form {
 }
 
 .bloque-footer {
-  display: grid;
-  place-items: center;
+  display: flex;
+  
   margin-bottom: 40px;
 }
 
@@ -432,13 +444,15 @@ form {
   place-items: center;
   padding: 20px;
   height: 500px;
+  overflow-x: scroll;
 }
 
 .texto {
   font-size: 18px;
   line-height: 1.6;
   text-align: center;
-  color: #333;
+  color: #8f8f8f;
+
 }
 
 /* fin Nosotros */
@@ -538,10 +552,18 @@ iframe{
     width: 300px;
 
   }
-
+.nosotros{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
   #marco-anuncio .px728 {
     display: none;
 
+  }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
@@ -553,7 +575,7 @@ iframe{
 
   .producto img {
     width: calc(var(--productoW) * 2);
-    height: calc(var(--prductoH) * 2);
+    height: calc(var(--productoH) * 2);
 
   }
 
