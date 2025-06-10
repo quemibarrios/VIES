@@ -4,7 +4,7 @@
   --buttonBGC: #8f8f8f;
   --blackFont: #000;
   --GradiantBN: linear-gradient(148deg, white, rgba(170, 171, 169, 0.733));
-  --articuloIMGW: calc((80vw / 2 - 20px / 2 ));
+  --articuloIMGW: calc((80vw / 2 ));
   --articuloIMGH: calc(var(--articuloIMGW) / 2);
   --productoW: var(--articuloIMGW);
   --productoH: calc(var(--productoW) * 4 / 3);
@@ -116,7 +116,7 @@ body {
   left: 10px;
   z-index: 5000;
   backdrop-filter: blur(4px);
-  background: linear-gradient(137deg,rgba(128, 128, 128, 0.25),rgba(213, 243, 247, 0.05));
+  background: linear-gradient(137deg,rgba(128, 128, 128, 0.50),rgba(213, 243, 247, 0.05));
 }
 
 
@@ -303,12 +303,9 @@ body {
 
 .contacto-container h1 {
   text-align: center;
-  margin-top: 50px;
   width: 100%;
   color: #8f8f8f;
   padding: 5px;
-
-  margin: 20px 50px; 
 }
 
 .contacto-titulo {
@@ -328,6 +325,9 @@ body {
   font-size: 18px;
   color: var(--buttonBGC);
 }
+.news {
+  margin-bottom: 15px;
+}
 
 .news-campo {
   width: 100%;
@@ -339,14 +339,13 @@ body {
 /*formulario */
 
 .formulario {
-  width: calc(400px + 15vw);
-  margin: 0 auto;
+  width: calc(300px + 15vw);
+  margin: 0 auto 20px; 
   padding: 20px;
   background-color: #f8f8f8;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   overflow-x: scroll;
-  margin: 10px;
 }
 
 .formulario textarea{
@@ -531,7 +530,7 @@ iframe{
     position: fixed;
     top: 70px;
     left: 10px;
-    background-color: rgba(216, 204, 204, 0.555);
+    background:linear-gradient(137deg, rgba(128, 128, 128, 0.50), rgba(213, 243, 247, 0.05));
     backdrop-filter: blur(3px);
     padding: 10px;
     gap: 15px;
@@ -540,6 +539,15 @@ iframe{
 .nav,.nav .logo{
   display: block;
   margin: auto;
+}
+
+.productos {
+  grid-template-columns: repeat(1, 1fr);
+
+}
+.producto img {
+  width: calc(var(--productoW) * 2);
+  height: calc(var(--productoH) * 2);
 }
 
 /*  #marco-anuncio .px300 {
@@ -567,16 +575,13 @@ iframe{
   }
 }
 
-@media (max-width:480px) {
+/* @media (max-width:480px) {
   .productos {
     grid-template-columns: repeat(1, 1fr);
 
   }
-
   .producto img {
     width: calc(var(--productoW) * 2);
     height: calc(var(--productoH) * 2);
-
   }
-
-}
+} */
