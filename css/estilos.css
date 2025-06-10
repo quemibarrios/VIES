@@ -428,22 +428,25 @@ form {
 .nosotros {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 600px;
   margin: 0px;
   background-color: #fff;
 }
 
 .bloque-izquierdo img {
-  width: 100%;
-  height: 600px;
+   width: calc(50vw - 20px);
+  height: 43.92vw;
+  position:sticky;
+  top: 0;
 }
-
+.nosotros .bloque-izquierdo {
+ background:rgb(217,217,217);
+margin-left: 20px;
+}
 .bloque-derecho {
   display: grid;
   place-items: center;
   padding: 20px;
-  height: 500px;
-  overflow-x: scroll;
+
 }
 
 .texto {
@@ -452,6 +455,10 @@ form {
   text-align: center;
   color: #8f8f8f;
 
+}
+
+.bloque-derecho h1 {
+  font-size: 32px;
 }
 
 /* fin Nosotros */
@@ -564,6 +571,18 @@ iframe{
   display: flex;
   flex-direction: column;
   height: auto;
+}
+
+.nosotros .bloque-izquierdo{
+  background: transparent;
+  margin: 0;
+}
+.bloque-izquierdo img {
+  display: block;
+  margin: auto;
+  width: 95vw;
+  height: 87.84vw;
+  
 }
   #marco-anuncio .px728 {
     display: none;
