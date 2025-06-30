@@ -422,6 +422,11 @@ form {
   margin-bottom: 40px;
 }
 
+
+.footer-info i {
+  color: #8f8f8f;
+  margin-right: 8px;
+}
 /* Fin footer */
 
 /* Nosotros */
